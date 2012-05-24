@@ -133,7 +133,7 @@ public class OwlKbServiceImpl implements OwlKbService {
         ArrayList<Term> idList = new ArrayList<Term>();
         if(exp!=null){
             GetSubClasses getSubClasses = new GetSubClasses(kbIRI, exp);
-            SetOfClassSynsets synsets = (SetOfClassSynsets)executeReasoner(getSubClasses);
+            SetOfClassSynsets synsets = (SetOfClassSynsets) (getSubClasses);
             for (Object synset : synsets) {
                 Node<OWLClass> owlClassNode = (Node<OWLClass>) synset;
                 idList.add(new Term(owlClassNode.getEntities().iterator().next().toStringID()));
@@ -171,6 +171,13 @@ public class OwlKbServiceImpl implements OwlKbService {
         return idList;
     }
 
+
+
+   	public ArrayList<Term> getTermsNoReasoner(String query){
+		ArrayList<Term> idList = new ArrayList<Term>();
+        OWLClassExpression exp = queryConstructorService.runManchesterQuery(query);
+        return idList;
+	}
     /**
      * Queries for all subclasses and equivalent classes
      * @param query following Manchester Query Syntax
@@ -179,6 +186,7 @@ public class OwlKbServiceImpl implements OwlKbService {
     public ArrayList<Term> getTerms(String query) {
         ArrayList<Term> idList = new ArrayList<Term>();
         OWLClassExpression exp = queryConstructorService.runManchesterQuery(query);
+		Runtime.getRuntime.gc();
         idList.addAll(getEquivalentTerms(exp));
         idList.addAll(getSubTerms(exp));
         return idList;

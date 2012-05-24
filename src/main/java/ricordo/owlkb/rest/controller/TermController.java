@@ -31,6 +31,14 @@ public class TermController {
         return new ModelAndView(XML_VIEW_NAME, "terms", list);
     }
 
+
+	@RequestMapping(method=RequestMethod.GET, value="/termsTest/{query}")
+    public ModelAndView getTermsTest(@PathVariable String query) {
+        List<Term> employees = owlKbService.getTermsNoReasoner(query);
+        TermList list = new TermList(employees);
+        return new ModelAndView(XML_VIEW_NAME, "terms", list);
+    }
+
     @RequestMapping(method=RequestMethod.GET, value="/subterms/{query}")
     public ModelAndView getSubTerms(@PathVariable String query) {
         List<Term> employees = owlKbService.getSubTerms(query);

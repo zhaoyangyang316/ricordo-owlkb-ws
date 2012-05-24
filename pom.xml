@@ -19,6 +19,16 @@
             <name>spring maven repository</name>
             <url>http://maven.springframework.org/milestone</url>
         </repository>
+        <repository>
+            <id>maven-for-owl</id>
+            <name>maven-for-owl</name>
+            <url>http://informatics.mayo.edu/maven/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>local</id>
+            <name>local</name>
+            <url>http://code.berkeleybop.org/maven/repository/</url>
+        </repository>
     </repositories>
 
     <properties>
@@ -309,14 +319,14 @@
 
         <dependency>
             <groupId>aterm</groupId>
-            <artifactId>aterm-java</artifactId>
+            <artifactId>aterm</artifactId>
             <version>1.6</version>
         </dependency>
 
         <dependency>
             <groupId>owlapi</groupId>
-            <artifactId>owlapi-bin</artifactId>
-            <version>3.1</version>
+            <artifactId>owlapiv3</artifactId>
+            <version>3.1.0</version>
         </dependency>
     </dependencies>
 </project>

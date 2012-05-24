@@ -69,8 +69,8 @@
           <element id="library" level="project" name="Maven: org.jgrapht:jgrapht-jdk1.5:0.7.3" />
           <element id="library" level="project" name="Maven: jgraph:jgraph:5.13.0.0" />
           <element id="library" level="project" name="Maven: com.sun.xml:relaxngDatatype:1.0" />
-          <element id="library" level="project" name="Maven: aterm:aterm-java:1.6" />
-          <element id="library" level="project" name="Maven: owlapi:owlapi-bin:3.1" />
+          <element id="library" level="project" name="Maven: aterm:aterm:1.6" />
+          <element id="library" level="project" name="Maven: owlapi:owlapiv3:3.1.0" />
         </element>
       </element>
     </root>

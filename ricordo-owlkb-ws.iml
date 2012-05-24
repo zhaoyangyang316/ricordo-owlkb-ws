@@ -9,19 +9,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-        </sourceRoots>
-      </configuration>
-    </facet>
-    <facet type="Spring" name="Spring">
-      <configuration>
-        <fileset id="fileset1" name="My Fileset" removed="false">
-          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/rest-servlet.xml</file>
-          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/rest-context.xml</file>
-        </fileset>
-        <fileset id="web: application context" profiles="" autodetected="true" />
-        <fileset id="web: rest servlet context" profiles="" autodetected="true" />
       </configuration>
     </facet>
   </component>
@@ -33,7 +20,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="jdk" jdkName="1.6" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.springframework:spring-asm:3.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.1.1.RELEASE" level="project" />
@@ -96,8 +83,8 @@
     <orderEntry type="library" name="Maven: org.jgrapht:jgrapht-jdk1.5:0.7.3" level="project" />
     <orderEntry type="library" name="Maven: jgraph:jgraph:5.13.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml:relaxngDatatype:1.0" level="project" />
-    <orderEntry type="library" name="Maven: aterm:aterm-java:1.6" level="project" />
-    <orderEntry type="library" name="Maven: owlapi:owlapi-bin:3.1" level="project" />
+    <orderEntry type="library" name="Maven: aterm:aterm:1.6" level="project" />
+    <orderEntry type="library" name="Maven: owlapi:owlapiv3:3.1.0" level="project" />
   </component>
 </module>
 

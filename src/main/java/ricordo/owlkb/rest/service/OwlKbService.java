@@ -16,4 +16,5 @@ public interface OwlKbService {
     public ArrayList<Term> getTerms(String query);
     public ArrayList<Term> addTerm(String query);
     public ArrayList<Term> deleteTerm(String query);
+    public ArrayList<Term> getTermsNoReasoner(String query);
 }

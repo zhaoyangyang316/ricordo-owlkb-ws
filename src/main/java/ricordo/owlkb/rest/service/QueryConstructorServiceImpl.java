@@ -43,7 +43,7 @@ public class QueryConstructorServiceImpl implements QueryConstructorService{
      */
     public OWLClassExpression runManchesterQuery(String manchesterQuery){
         ManchesterOWLSyntaxEditorParser parser = new ManchesterOWLSyntaxEditorParser(owlOntologyManager.getOWLDataFactory(), manchesterQuery);
-        parser.setDefaultOntology(queryOntology);
+        parser.setDefaultOntology(this.queryOntology);
         Set<OWLOntology> importsClosure = queryOntology.getImportsClosure();
         BidirectionalShortFormProvider bidiShortFormProvider = new BidirectionalShortFormProviderAdapter(owlOntologyManager, importsClosure, new SimpleShortFormProvider());
         OWLEntityChecker entityChecker = new ShortFormEntityChecker(bidiShortFormProvider);
@@ -55,7 +55,11 @@ public class QueryConstructorServiceImpl implements QueryConstructorService{
         } catch (ParserException e) {
             e.printStackTrace();
         }
-
+		parser = null;
+		importsClosure = null;
+		bidiShortFormProvider = null;
+		entityChecker = null;
+		
         return classExp;
     }
 

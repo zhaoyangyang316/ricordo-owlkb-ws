@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: aterm:aterm-java:1.6">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/aterm/aterm-java/1.6/aterm-java-1.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/aterm/aterm/1.6/aterm-1.6.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/aterm/aterm-java/1.6/aterm-java-1.6-javadoc.jar!/" />
